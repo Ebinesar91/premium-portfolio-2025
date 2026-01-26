@@ -1,0 +1,43 @@
+:root {
+  /* Colors - Dark Modern Tech Theme */
+  --bg-color: #0a0a0a;
+  --bg-secondary: #111111;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+
+  /* Neon Accents */
+  --accent-primary: #00f0ff;
+  /* Cyan Neon */
+  --accent-secondary: #7000ff;
+  /* Purple Neon */
+  --accent-glow: rgba(0, 240, 255, 0.4);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  --glass-blur: 10px;
+
+  /* Typography */
+  --font-main: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --section-padding: 120px 24px;
+  --container-width: 1200px;
+
+  /* Animation */
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Dark Mode Default */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--accent-primary);
+  color: var(--bg-color);
+}

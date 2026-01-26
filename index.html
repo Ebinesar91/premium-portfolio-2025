@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ebinesar | Software Developer Portfolio</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress"></div>
+
+  <!-- Background Ambient Glows -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <div id="app">
+    <!-- Navigation -->
+    <nav class="nav">
+      <!-- Will implement dynamic nav via JS or keep simple absolute -->
+    </nav>
+
+    <!-- 1️⃣ HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h2 class="fancy-text" data-speed="0.5">Hello, I'm</h2>
+          <h1 class="hero-title Reveal-type" data-speed="1">Ebinesar</h1>
+          <!-- Role Text Animation -->
+          <h3 class="hero-subtitle"><span class="txt-type" data-wait="3000"
+              data-words='["B.E. CSE Student", "Aspiring Software Developer", "Full Stack Enthusiast"]'></span></h3>
+
+          <div class="hero-cta">
+            <div class="magnetic-area">
+              <a href="#resume" class="btn btn-primary">View Resume</a>
+            </div>
+            <div class="magnetic-area">
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+          </div>
+
+          <!-- Social/Location Info (Optional but helpful based on prompt details) -->
+          <div class="hero-social" style="margin-top: 20px; opacity: 0.7;">
+            <p><small>Tiruttani, India • ebinesarebinesar192@gmail.com</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- 2️⃣ ABOUT ME -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title reveal-text">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text glass-card reveal-up">
+            <p>Ambitious and persistent B.E. Computer Science student at GRT Institute of Engineering and Technology,
+              Tiruttani, currently enrolled in NxtWave CCBP 4.0 Full Stack program since 2024.</p>
+            <br>
+            <p>Proficient in Python, HTML, CSS, and JavaScript. Strong learner with hackathon experience and a junior
+              typewriting certificate in Tamil and English. Seeking internship opportunities in 2026.</p>
+          </div>
+          <div class="about-stats reveal-up" data-delay="0.2">
+            <div class="stat-item glass-card">
+              <h3>2028</h3>
+              <p>Graduation Year</p>
+            </div>
+            <div class="stat-item glass-card">
+              <!-- Using the GitHub link as a stat/action -->
+              <h3>GitHub</h3>
+              <p><a href="https://github.com/Ebinesar91" target="_blank">View Profile</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3️⃣ EDUCATION -->
+    <section id="education" class="education-section">
+      <div class="container">
+        <h2 class="section-title reveal-text">Education</h2>
+        <div class="education-list">
+          <div class="education-item glass-card reveal-up">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+              <div>
+                <h3>B.E. Computer Science & Engineering</h3>
+                <h4 style="color: var(--accent-primary);">GRT Institute of Engineering and Technology</h4>
+              </div>
+              <div style="text-align: right;">
+                <span class="skill-tag">2024 – Present</span>
+                <br><small style="color: #888;">Expected Graduation: 2028</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="education-item glass-card reveal-up" data-delay="0.1">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+              <div>
+                <h3>Full Stack Development</h3>
+                <h4 style="color: var(--accent-primary);">NxtWave CCBP 4.0</h4>
+              </div>
+              <div style="text-align: right;">
+                <span class="skill-tag">2024 – Present</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4️⃣ TECHNICAL SKILLS -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 class="section-title reveal-text">Technical Skills</h2>
+        <div class="skills-wrapper">
+          <div class="skill-category reveal-up">
+            <h3>Core Stack</h3>
+            <div class="skill-list">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">Responsive Design</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal-up" data-delay="0.1">
+            <h3>Tools & libraries</h3>
+            <div class="skill-list">
+              <span class="skill-tag">DOM Manipulation</span>
+              <span class="skill-tag">Fetch / AJAX</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">DevTools</span>
+              <span class="skill-tag">GSAP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5️⃣ PROJECTS -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title reveal-text">Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card glass-card reveal-up">
+            <div class="project-img-wrapper">
+              <div class="project-image"
+                style="background: #111; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 3rem;">📂</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Portfolio Website</h3>
+              <p>Showcases projects, resume, and contact form. Built with HTML, CSS, JavaScript, and Supabase.</p>
+              <div class="project-tags">
+                <span class="skill-tag small">HTML</span>
+                <span class="skill-tag small">CSS</span>
+                <span class="skill-tag small">JS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card glass-card reveal-up" data-delay="0.1">
+            <div class="project-img-wrapper">
+              <div class="project-image"
+                style="background: #1a1a1a; display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 3rem;">💬</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Simple Chat App (Prototype)</h3>
+              <p>Message persistence implemented using Python (Flask), Vanilla JavaScript, and SQLite.</p>
+              <div class="project-tags">
+                <span class="skill-tag small">Python</span>
+                <span class="skill-tag small">Flask</span>
+                <span class="skill-tag small">SQLite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6️⃣ EXPERIENCE & ACHIEVEMENTS -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <h2 class="section-title reveal-text">Experience & Achievements</h2>
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item reveal-left">
+            <div class="timeline-date">Achievement</div>
+            <div class="timeline-content glass-card">
+              <h3>Hackathon Winner</h3>
+              <h4>3-Month Internship Award</h4>
+              <p>Recognized for technical skills and problem-solving abilities in a competitive environment.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item reveal-right">
+            <div class="timeline-date">Certification</div>
+            <div class="timeline-content glass-card">
+              <h3>Junior Typewriting Certificate</h3>
+              <h4>Tamil & English</h4>
+              <p>Demonstrated proficiency and speed in bilingual typewriting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7️⃣ RESUME SECTION -->
+    <section id="resume" class="resume-section">
+      <div class="container">
+        <h2 class="section-title reveal-text">Resume</h2>
+        <div class="glass-card reveal-up">
+          <div class="resume-container">
+            <!-- Embedded PDF Viewer -->
+            <object data="./assets/resume.pdf" type="application/pdf" class="resume-frame">
+              <p style="padding: 20px; text-align: center;">
+                It appears you don't have a PDF plugin for this browser.
+                No biggie... you can <a href="./assets/resume.pdf" style="color: var(--accent-primary);">click here to
+                  download the PDF file.</a>
+              </p>
+            </object>
+          </div>
+          <div class="download-wrapper">
+            <a href="./assets/resume.pdf" download="Ebinesar_Resume.pdf" class="btn btn-primary magnetic-area">
+              <span>Download Resume</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8️⃣ CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title reveal-text">Contact Me</h2>
+        <div class="contact-wrapper glass-card reveal-up">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" class="form-input" placeholder=" " required />
+              <label for="name" class="form-label">Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" class="form-input" placeholder=" " required />
+              <label for="email" class="form-label">Email</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" class="form-textarea" placeholder=" " required></textarea>
+              <label for="message" class="form-label">Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary magnetic-button">
+              <span>Send Message</span>
+            </button>
+          </form>
+          <div id="form-status"></div>
+          <p style="text-align: center; margin-top: 20px; font-size: 0.9rem; color: #666;">
+            Or email me at: <a href="mailto:ebinesarebinesar192@gmail.com"
+              style="color: var(--accent-primary);">ebinesarebinesar192@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Ebinesar. Built with pure code & passion.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
