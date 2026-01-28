@@ -67,6 +67,7 @@ export function initCertificates(gsap) {
             modalObject.data = src;
             modalDownload.href = src;
             modalFallback.href = src;
+            document.getElementById('modal-mobile-view').href = src;
 
             // Show Modal (CSS + GSAP)
             modal.classList.add('active');

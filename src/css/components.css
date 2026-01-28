@@ -409,6 +409,22 @@
   display: block;
 }
 
+.mobile-pdf-fallback {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.mobile-pdf-fallback p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
 .modal-footer {
   padding: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -430,6 +446,17 @@
   }
 
   .modal-preview {
-    min-height: 400px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-pdf-frame {
+    display: none;
+  }
+
+  .mobile-pdf-fallback {
+    display: flex;
   }
 }

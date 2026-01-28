@@ -542,10 +542,15 @@
           <p id="modal-info">Certificate Info</p>
         </div>
         <div class="modal-preview">
-          <!-- PDF Object or Image will be injected here -->
+          <!-- PDF Object -->
           <object id="modal-object" type="application/pdf" data="" class="modal-pdf-frame">
             <p>Preview not available. <a id="modal-fallback" href="#">Download file</a></p>
           </object>
+          <!-- Mobile Fallback Button (Visible only on mobile) -->
+          <div class="mobile-pdf-fallback">
+            <p>PDF preview is optimized for desktop.</p>
+            <a id="modal-mobile-view" href="#" target="_blank" class="btn btn-secondary">Open PDF in New Tab</a>
+          </div>
         </div>
         <div class="modal-footer">
           <a id="modal-download" href="#" class="btn btn-primary" download>Download Certificate</a>
